@@ -32,7 +32,7 @@ def test_petfriends(selenium):
     btn_submit = selenium.find_element_by_xpath ("//button[@type='submit']")
     btn_submit.click ()
 
-    time.sleep (10)  # just for demo purposes, do NOT repeat it on real projects!
+    time.sleep (7)  # just for demo purposes, do NOT repeat it on real projects!
     if selenium.current_url == 'https://petfriends1.herokuapp.com/all_pets':
         # Make the screenshot of browser window:
         selenium.save_screenshot ('result_petfriends.png')
